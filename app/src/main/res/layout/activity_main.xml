@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:background="#fff"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:src="@drawable/icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+
+    <EditText
+
+        android:layout_marginTop="10dp"
+        android:id="@+id/loginMail"
+        android:textColor="@color/sideone"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/allcategoriesfont"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/loginpass"
+        android:textColor="@color/sideone"
+        android:fontFamily="@font/allcategoriesfont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textSize="24sp"
+        />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:layout_gravity="center"
+        android:textColor="#FFF"
+        android:text="Login"
+        android:fontFamily="@font/abc"
+        android:background="@color/buttoncolor"
+        android:padding="3dp"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/allcategoriesfont"
+            android:text="Dont't have an account?"
+            android:textColor="#000"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allcategoriesfont"
+            android:text="Register"
+            android:paddingLeft="10dp"
+            android:textColor="@color/sideone"
+            android:id="@+id/register"
+            />
+    </LinearLayout><!--invisible-->
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:id="@+id/forgotpass"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/allcategoriesfont"
+        android:textColor="@color/colorPrimaryDark"/><!--invisible-->
+
+    <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progress"
+        style="@style/SpinKitView.Large.FadingCircle"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        app:SpinKit_Color="#000" />
+
+</LinearLayout>
