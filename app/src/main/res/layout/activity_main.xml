@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".Login"
     android:gravity="center"
     android:background="#fff"
     android:layout_gravity="center">
@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:fontFamily="@font/allcategoriesfont"
         android:layout_height="wrap_content"
-        android:hint="Enter Email"
+        android:hint="@string/enter_email"
         android:textSize="24sp"/>
 
     <EditText
@@ -46,7 +46,7 @@
         android:paddingVertical="20dp"
         android:layout_gravity="center"
         android:textColor="#FFF"
-        android:text="Login"
+        android:text="@string/login"
         android:fontFamily="@font/abc"
         android:background="@color/buttoncolor"
         android:padding="3dp"
