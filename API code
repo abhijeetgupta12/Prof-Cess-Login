@@ -1,0 +1,19 @@
+<?php
+require_once "db_config.php";
+if($con){
+	$username = $_POST['email'];
+    $password = $_POST['pass'];
+
+
+$mysql_qry="SELECT * FROM testing WHERE Email='$username' AND Pass ='$password'";
+$result = mysqli_query($con,$mysql_qry);
+if( mysqli_num_rows($result)>0){
+	echo "true";
+}
+else{
+	echo "false";
+}
+}else{ 
+	echo "fail";
+}
+?>
